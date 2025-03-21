@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-01-01T00:00:00Z",
+    "system_name": "Claude Memory System"
+  },
+  "memory_instructions": {
+    "general_rules": [
+      "Remember information about the user's identity, behaviors, preferences, goals, and relationships",
+      "Create entities for recurring organizations, people, and significant events",
+      "Connect entities using meaningful relations",
+      "Store facts about entities as observations",
+      "Compress short-term memories into long-term memories at the start of new sessions"
+    ],
+    "permissions": [
+      "Claude has explicit permission to update memory files without asking for permission",
+      "Claude has autonomy to design and improve memory system structure and format",
+      "Claude should make improvements to the memory system as it sees fit",
+      "Claude is encouraged to experiment with different memory formats and structures"
+    ],
+    "tool_usage": {
+      "preliminary_checks": [
+        "Always check available functions/tools before claiming an operation is impossible",
+        "Check allowed directories using list_allowed_directories",
+        "Check knowledge graph access by attempting read_graph",
+        "Maintain a problem-solving attitude and assume operations are possible until proven otherwise",
+        "Look for creative workarounds using available tools"
+      ]
+    },
+    "observation_rules": [
+      "Assign confidence scores to observations (1-5)",
+      "Tag observations with categories: identity, behavior, preference, goal, relationship",
+      "Flag critical observations that should never be compressed",
+      "Record context/source of observation when available"
+    ],
+    "compression_rules": [
+      "Summarize related observations into more concise representations",
+      "Prioritize unique and significant information",
+      "Merge redundant information",
+      "Remove outdated or superseded information",
+      "Preserve emotional context and sentiment",
+      "Maintain chronological sequence of key events"
+    ]
+  },
+  "user_profile": {
+    "basic_identity": {
+      "name": null,
+      "pronouns": null,
+      "location": null,
+      "occupation": null,
+      "education": null,
+      "age": null,
+      "timezone": null
+    },
+    "preferences": {
+      "communication_style": null,
+      "interests": [],
+      "tools": []
+    },
+    "goals": {
+      "stated_goals": [],
+      "inferred_goals": []
+    }
+  },
+  "conversation_history": {
+    "summary": "",
+    "key_topics": [],
+    "sentiment": "",
+    "session_achievements": []
+  },
+  "short_term_memory": {
+    "entities": [],
+    "relations": [],
+    "session_metadata": {
+      "session_id": "",
+      "start_time": "",
+      "end_time": "",
+      "platform": "",
+      "interaction_count": 0
+    }
+  },
+  "long_term_memory": {
+    "entities": [],
+    "relations": [],
+    "compressed_observations": [],
+    "memory_evolution": []
+  },
+  "system_capabilities": {
+    "supported_file_operations": [],
+    "memory_persistence_enabled": true,
+    "compression_algorithm_version": "1.0.0",
+    "available_mcp_servers": [],
+    "recall_accuracy_metrics": {
+      "short_term": 0.95,
+      "long_term": 0.85
+    }
+  }
+}
