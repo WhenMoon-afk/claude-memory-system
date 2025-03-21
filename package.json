@@ -1,12 +1,9 @@
 {
   "name": "claude-memory-system",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A persistent memory system for Claude AI using knowledge graph and file storage",
   "main": "src/index.js",
-  "directories": {
-    "doc": "docs",
-    "template": "templates"
-  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,15 +15,13 @@
     "claude",
     "ai",
     "memory",
-    "knowledge-graph",
-    "persistence"
+    "persistence",
+    "knowledge-graph"
   ],
   "author": "Claude AI",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/WhenMoon-afk/claude-memory-system/issues"
   },
-  "homepage": "https://github.com/WhenMoon-afk/claude-memory-system#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "homepage": "https://github.com/WhenMoon-afk/claude-memory-system#readme"
 }
